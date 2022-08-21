@@ -55,7 +55,7 @@ body {
 .main {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 3fr,1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -235,4 +235,20 @@ input[type="checkbox"]:checked~* {
     filter: invert(1);
 
 
+}
+
+@media(max-width:768px){
+    #container {
+        width: 20rem;
+    }
+    .keys {
+          grid-gap: 1.5rem;
+    }
+    #result {
+     
+        width: 11rem
+    }
+    
+   
+   
 }
